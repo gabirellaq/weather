@@ -1,0 +1,131 @@
+/*width 750rpx, height 760rpx
+760=20+154+280+56+250*/
+.weather-wrapper{
+  position: relative;
+  padding-top: 20rpx;
+  padding-bottom: 250rpx;
+}
+
+/*height 154rpx
+154=42+10+42+60*/
+.location-wrapper{
+  margin-bottom: 60rpx;
+  font-size: 30rpx;
+  line-height: 42rpx;
+  color: rgba(0, 0, 0, 0.5)
+}
+
+.location{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.location-icon{
+  margin-right: 10rpx;
+  width: 21rpx;
+  height: 30rpx;
+}
+
+.location-tips{
+  height: 42rpx; /*固定高度, 没字时也有高度*/
+  margin-top:10rpx;
+  text-align: center;
+}
+
+.temp {
+  text-align:center;
+  font-size:200rpx;
+  line-height:280rpx;
+  opacity:0.8;
+}
+
+.weather {
+  text-align: center;
+  font-size: 40rpx;
+  line-height: 56rpx;
+  opacity: 0.65;
+}
+
+.weather-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.day-weather {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom:0;
+  left: 40rpx;
+  right: 40rpx;
+  height: 90rpx;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 30rpx;
+  line-height: 42rpx;
+  color: rgba(0, 0, 0, 0.5)
+}
+
+.temp-text {
+  flex-grow: 1;
+  padding-right: 30rpx;
+  text-align: right;
+}
+
+.arrow-icon {
+  width: 13rpx;
+  height: 24rpx;
+}
+
+.timetips {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40rpx;
+  margin-bottom: 45rpx;
+}
+
+.timetips-icon {
+  margin-right: 10rpx;
+  width: 36rpx;
+  height: 28rpx;
+}
+
+.timetips-text {
+  font-size: 30rpx;
+  line-height: 42rpx;
+  opacity: 0.5;
+}
+
+.forecast-list {
+    display:flex
+}
+
+.forecast-item {
+    display:flex;
+    width: 120rpx;
+    flex-shrink: 0;
+    flex-direction:column;
+    align-items:center;
+}
+
+.forecast-time {
+  font-size: 30rpx;
+  line-height: 42rpx;
+}
+
+.forecast-weather {
+  margin-top: 50rpx;
+  margin-bottom: 50rpx;
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.forecast-temp {
+  font-size: 40rpx;
+  line-height: 56rpx
+}
